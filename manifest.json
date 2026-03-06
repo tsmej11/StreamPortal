@@ -1,0 +1,10 @@
+{
+  "id": "com.tsmej11.streamportal",
+  "version": "1.0.0",
+  "name": "StreamPortal",
+  "description": "My first Stremio addon",
+  "logo": "https://www.stremio.com/website/stremio-logo-small.png",
+  "resources": [],
+  "types": [],
+  "catalogs": []
+}
