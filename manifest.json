@@ -1,23 +1,28 @@
-{
-  "id": "com.tsmej11.streamportal",
-  "version": "1.0.0",
-  "name": "StreamPortal",
-  "description": "My first Stremio addon",
-  "logo": "https://www.stremio.com/website/stremio-logo-small.png",
-  "types": ["movie"],
-  "catalogs": [
-    {
-      "type": "movie",
-      "id": "streamportalcatalog",
-      "name": "StreamPortal Catalog"
-    }
-  ],
-  "resources": [
-    "catalog",
-    {
-      "name": "stream",
-      "types": ["movie"],
-      "idPrefixes": ["tt"]
-    }
-  ]
-}
+"types": ["movie","series"],
+
+"catalogs": [
+  {
+    "type": "movie",
+    "id": "movies_trending",
+    "name": "Trending Movies"
+  },
+  {
+    "type": "movie",
+    "id": "movies_new",
+    "name": "New Movies"
+  },
+  {
+    "type": "series",
+    "id": "series_popular",
+    "name": "Popular Shows"
+  }
+],
+
+"resources": [
+  "catalog",
+  {
+    "name": "stream",
+    "types": ["movie","series"],
+    "idPrefixes": ["tt"]
+  }
+]
