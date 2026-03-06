@@ -4,7 +4,20 @@
   "name": "StreamPortal",
   "description": "My first Stremio addon",
   "logo": "https://www.stremio.com/website/stremio-logo-small.png",
-  "resources": [],
-  "types": [],
-  "catalogs": []
+  "types": ["movie"],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "streamportalcatalog",
+      "name": "StreamPortal Catalog"
+    }
+  ],
+  "resources": [
+    "catalog",
+    {
+      "name": "stream",
+      "types": ["movie"],
+      "idPrefixes": ["tt"]
+    }
+  ]
 }
